@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background: #000;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    background: #ff99cc;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.lights-on {
+    background: #ffe6ff;
+    color: black;
+}
+
+/* MEMORY BOX */
+.memory-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.memory-overlay.show {
+    display: flex;
+}
+
+.memory-box {
+    max-width: 92%;
+    background: #111;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.memory-photo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#memoryVideo {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Fireworks */
+.fireworks-container .firework {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    animation: explode 1s linear;
+}
+
+@keyframes explode {
+    from { transform: scale(0); opacity: 1; }
+    to { transform: scale(3); opacity: 0; }
+}
+
+/* Fireflies */
+.fireflies .firefly {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: fly 5s infinite ease-in-out;
+}
+
+@keyframes fly {
+    0% { transform: translateY(0px); opacity: 0.4; }
+    50% { transform: translateY(-80px); opacity: 1; }
+    100% { transform: translateY(0px); opacity: 0.4; }
+}
+
+/* End Photo */
+.end-photo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 160px;
+    opacity: 0;
+    transition: opacity 2s ease;
+    border-radius: 10px;
+}
