@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KissTea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" src="salvatore.mp3" loop></audio>
+
+    <div class="container">
+        <h1 class="title">Happy Birthday My Love</h1>
+
+        <button id="light-btn" class="btn">Lights On/Off</button>
+        <button id="gift-btn" class="btn">Open Gift</button>
+        <button id="memory-btn" class="btn">Memory Box</button>
+    </div>
+
+    <!-- MEMORY OVERLAY -->
+    <div id="memoryOverlay" class="memory-overlay" aria-hidden="true">
+        <div class="memory-box">
+            <span id="memoryClose" class="close-btn">✖</span>
+
+            <div class="memory-grid">
+                <img src="memory1.jpg" class="memory-photo">
+                <img src="memory2.jpg" class="memory-photo">
+                <img src="memory3.jpg" class="memory-photo">
+                <img src="memory4.jpg" class="memory-photo">
+            </div>
+
+            <video id="memoryVideo" controls>
+                <source src="memoryvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
